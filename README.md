@@ -1,4 +1,8 @@
-cinderItunes
+Cinder.iTunes
 ============
 
-iTunes block for cinder. (partially developed on top of bloom time's awesome cinder iPod library)
+iTunes block for Cinder. 
+
+Cruelly ripped from proud Papi Seph14, who partially developed on top of bloom time's awesome cinder iPod library, then done down, done dirty, and done so wrong over & over until it did done right.  
+
+(Sono sicuro che qualcuno di voi si toccherà quando leggerà quel, pervertiti!  Proseguire...)
