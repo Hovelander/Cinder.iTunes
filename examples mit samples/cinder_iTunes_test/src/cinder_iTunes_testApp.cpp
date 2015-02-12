@@ -11,7 +11,7 @@ using namespace ci::ipod;
 using namespace std;
 
 
-class cinder_ipod_testApp : public AppCocoaTouch {
+class cinder_iTunes_testApp : public AppCocoaTouch {
   public:
     void prepareSettings(Settings *settings);
 	void setup();
@@ -29,12 +29,12 @@ class cinder_ipod_testApp : public AppCocoaTouch {
 };
 
 
-void cinder_ipod_testApp::prepareSettings(Settings *settings)
+void cinder_iTunes_testApp::prepareSettings(Settings *settings)
 {
     settings->enableMultiTouch(true);
 }
 
-void cinder_ipod_testApp::setup()
+void cinder_iTunes_testApp::setup()
 {
     vector<ipod::PlaylistRef> albums = getAlbums();
 
@@ -68,15 +68,15 @@ void cinder_ipod_testApp::setup()
     }
 
     // Play the first track
-    player.registerStateChanged(this, &cinder_ipod_testApp::onStateChanged);
-    player.registerTrackChanged(this, &cinder_ipod_testApp::onTrackChanged);
+    player.registerStateChanged(this, &cinder_iTunes_testApp::onStateChanged);
+    player.registerTrackChanged(this, &cinder_iTunes_testApp::onTrackChanged);
 }
 
-void cinder_ipod_testApp::update()
+void cinder_iTunes_testApp::update()
 {
 }
 
-void cinder_ipod_testApp::draw()
+void cinder_iTunes_testApp::draw()
 {
     gl::clear(Color(0,0,0));
     gl::setMatricesWindow(getWindowSize(), true);
@@ -97,7 +97,7 @@ void cinder_ipod_testApp::draw()
 }
 
 
-void cinder_ipod_testApp::touchesBegan(TouchEvent event)
+void cinder_iTunes_testApp::touchesBegan(TouchEvent event)
 {
     if(player.getPlayState() != Player::StatePlaying)
         player.play(getAlbums()[0], 0);
@@ -106,7 +106,7 @@ void cinder_ipod_testApp::touchesBegan(TouchEvent event)
 }
 
 
-bool cinder_ipod_testApp::onStateChanged(Player *player)
+bool cinder_iTunes_testApp::onStateChanged(Player *player)
 {
     switch(player->getPlayState()){
         case Player::StatePlaying:
@@ -119,11 +119,11 @@ bool cinder_ipod_testApp::onStateChanged(Player *player)
     return false;
 }
 
-bool cinder_ipod_testApp::onTrackChanged(Player *player)
+bool cinder_iTunes_testApp::onTrackChanged(Player *player)
 {
     console() << "Now Playing: " << player->getPlayingTrack()->getTitle() << endl;
     return false;
 }
 
 
-CINDER_APP_COCOA_TOUCH( cinder_ipod_testApp, RendererGl )
+CINDER_APP_COCOA_TOUCH( cinder_iTunes_testApp, RendererGl )
