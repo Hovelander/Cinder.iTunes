@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cinder>
 <block
-	name="iTunes"
-	id="com.solid-jellyfish.iTunes"
-	author="seph li"
+	name="Cinder.iTunes"
+	id="com.darkmatterlight.Cinder.iTunes"
+	author="seph li (original) D.S. Hoveland (Bastardizer)"
 	summary="iTunes for iOS using the Media Player framework."
 	core="false"
 	>
