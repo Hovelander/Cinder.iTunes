@@ -156,4 +156,4 @@ namespace cinder { namespace iTunes {
         }
         return ([MPMediaItemCollection collectionWithItems:items]);
     }
-} } // namespace cinder::ipod
+} } // namespace cinder::iTunes
