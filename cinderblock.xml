@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="0.5" encoding="UTF-8" ?>
 <cinder>
 <block
 	name="Cinder.iTunes"
@@ -11,7 +11,7 @@
 	<source>src/iTunes.mm</source>
 	<source>src/Track.mm</source>
 	<source>src/TrackConverter.mm</source>
-	<headerPattern>src/*.h</headerPattern>
+	<headerPattern>include/*.h</headerPattern>
 	<platform os="ios">
 		<framework sdk="true">MediaPlayer.framework</framework>
 	</platform>
