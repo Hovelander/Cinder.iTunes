@@ -377,4 +377,4 @@ namespace cinder { namespace iTunes {
         return artists;
     }
     
-} } // namespace cinder::itunes
+} } // namespace cinder::iTunes
