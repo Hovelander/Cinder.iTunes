@@ -9,7 +9,7 @@
  1) check is a sound track is local file or not (cloud file that doesn't have asset url);
  2) asset url access;
  3) copy track file to current app's domain;
- 4) init with ipod player so that music playback won't be stopped after the app goes sleep.
+ 4) init with iTunes player so that music playback won't be stopped after the app goes sleep.
  
  This file is part of the iOS iTunes library for Cinder
  Copyright 2014-12 by seph li.
